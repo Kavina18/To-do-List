@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("backgroung.jpg") ;
+    background-repeat: no-repeat;
+    background-position:  center ;
+    background-attachment: fixed;
+    background-size: cover; /* Ensure the background image covers the entire area */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+:root {
+    --gray: #86A788;
+    --pink: #FFCFCF;
+    --lpink: #FFE2E2;
+    --smoke: #FFFDEC;
+}
+
+.container {
+    background: rgba(170, 167, 167, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Make the container responsive */
+    max-width: 500px; /* Set a maximum width */
+    text-align: center;
+}
+
+h1 {
+    color: var(--smoke);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.fa-solid{
+    color: rgb(67, 67, 67);
+}
+
+input[type="text"], input[type="datetime-local"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--pink);
+    border-radius: 4px;
+    background-color: var(--lpink);
+}
+
+input:focus{
+    background-color: var(--pink);
+}
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: var(--smoke);
+    border: var(--pink);
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: var(--lpink);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--pink);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start */
+}
+
+li span {
+    flex-grow: 1;
+    white-space: normal; /* Allow text to wrap */
+    overflow: visible; /* Show overflow text */
+    text-overflow: clip; /* No ellipsis */
+}
+
+li .task-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+li button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+li button:hover {
+    background: #c82333;
+}
+
+.task-timer {
+    margin-top: 10px; /* Add margin to separate from task details */
+    font-size: 0.9em;
+    color: #161616;
+    white-space: normal; /* Allow text to wrap */
+    text-align: center; /* Center align text */
+    width: 100%; /* Ensure the timer takes full width */
+}
