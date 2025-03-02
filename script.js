@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function startTimer(duration, display, task) {
         let timer = duration, hours, minutes, seconds;
         const interval = setInterval(() => {
-            hours = Math.floor((timer / (1000 * 60 * 60)) % 24);
+            hours = Math.floor((timer / (1000 * 60 * 60)));
             minutes = Math.floor((timer / (1000 * 60)) % 60);
             seconds = Math.floor((timer / 1000) % 60);
 
