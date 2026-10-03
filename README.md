@@ -1,1 +1,3 @@
-# To-do-List
+# Task List Application
+
+A simple and user-friendly Task List Application developed using HTML, CSS, and JavaScript. The project follows the basic concept of a traditional To-Do List while adding customized features such as due date and time selection, real-time countdown timers, automatic task sorting, task deletion, and Local Storage persistence. It allows users to manage time-based tasks efficiently and keeps saved tasks available even after refreshing the browser. This project demonstrates practical usage of DOM manipulation, event handling, date and time calculations, JavaScript timers, and Browser Local Storage.
